@@ -129,7 +129,7 @@ const SecondWindow = () => {
 
   // webscoket connection 
   useEffect(() => {
-    ws.current = new WebSocket('wss://localhost:8081');
+    ws.current = new WebSocket(`wss://${process.env.REACT_APP_BASE_URL}:8081`);
 
     ws.current.onopen = () => {
         console.log("WebSocket connected");
