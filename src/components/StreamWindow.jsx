@@ -53,7 +53,7 @@ const StreamWindow = () => {
         if (ws.current) ws.current.close(); // Close any previous WebSocket connection
 
         const wsProtocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
-        ws.current = new WebSocket(`${wsProtocol}://${process.env.REACT_APP_BASE_URL}:8081`);
+        ws.current = new WebSocket(`${wsProtocol}://xstreambackend.onrender.com:8081`);
 
         ws.current.onopen = () => {
             console.log("WebSocket connected to room:", selectedRoom);
