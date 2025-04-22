@@ -69,10 +69,10 @@ function Navbar() {
           </div>
         ) : (
           <div className="space-x-4">
-            <Link to="/Login" className="px-4 py-2 bg-white text-purple-700 rounded-lg font-semibold hover:bg-gray-100">
+            <Link to="/Login" className="px-1 md:px-4 py-2 bg-white text-purple-700 rounded-lg font-semibold hover:bg-gray-100">
               Login
             </Link>
-            <Link to="/signup" className="px-4 py-2 bg-purple-900 text-white rounded-lg font-semibold hover:bg-purple-800">
+            <Link to="/signup" className="px-1 md:px-4 py-2 bg-purple-900 text-white rounded-lg font-semibold hover:bg-purple-800">
               Sign Up
             </Link>
           </div>
